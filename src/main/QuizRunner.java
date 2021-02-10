@@ -12,8 +12,18 @@ public class QuizRunner {
                 "BC");
         myQuiz.addQuestion(myCheckBoxQuestion);
 
-        TrueFalseQuestion myTrueFalseQuestion = new TrueFalseQuestion("Can you code a quiz?", "TRUE");
+        TrueFalseQuestion myTrueFalseQuestion = new TrueFalseQuestion("True or false? You can code a quiz.", "TRUE");
         myQuiz.addQuestion(myTrueFalseQuestion);
+
+        ShortAnswerQuestion myShortAnswerQuestion = new ShortAnswerQuestion("What country is Cusco a part of?", "Peru");
+        myQuiz.addQuestion(myShortAnswerQuestion);
+
+        LinearScaleQuestion myLinearScaleQuestion = new LinearScaleQuestion("Please enter a pH value that would be considered acidic.",
+                0, 6);
+        myQuiz.addQuestion(myLinearScaleQuestion);
+
+        ParagraphQuestion myParagraphQuestion = new ParagraphQuestion("Tell me why you want to code (because it's great, right?).","Because it's great");
+        myQuiz.addQuestion(myParagraphQuestion);
 
         myQuiz.runQuiz();
     }

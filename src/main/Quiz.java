@@ -21,6 +21,8 @@ public class Quiz {
     }
 
     // Methods
+
+    public ArrayList<Question> getQuestions() { return this.questions; }
     public void addQuestion(Question question) {
         this.questions.add(question);
     }
